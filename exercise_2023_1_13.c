@@ -215,3 +215,58 @@
 //	printf("%s\n", arr);
 //	return 0;
 //}
+
+
+//思路：
+//先将n-1个盘子从A借助C放到B里
+//再将最底下的盘子从A挪到C里
+//最后将B的n-1个盘子从B借助A挪到C里
+#include<stdio.h>
+//汉诺塔
+//Hanoi(int n, char A, char B, char C)
+//{
+//	if (n == 1)
+//		printf("%c -> %c\n", A, C);
+//	else
+//	{
+//		Hanoi(n - 1, A, C, B);
+//		printf("%c -> %c\n", A, C);
+//		Hanoi(n - 1, B, A, C);
+//	}
+//}
+//int main()
+//{
+//	int n = 0;
+//	scanf("%d", &n);
+//	char a = 'A';
+//	char b = 'B';
+//	char c = 'C';
+//	Hanoi(n, a, b, c);
+//	return 0;
+//}
+
+
+
+////思路
+////如果有1级台阶，那么方法为1
+////如果有2级台阶，那么方法为2
+////青蛙跳n级台阶的一共有跳n-1的方法+跳n-2的方法中方法。
+////和斐波那契问题类似
+//#include<stdio.h>
+////青蛙跳台阶
+//int frog(int n)
+//{
+//	if (n == 1)
+//		return 1;
+//	if (n == 2)
+//		return 2;
+//	return frog(n - 1) + frog(n - 2);
+//}
+//int main()
+//{
+//	int n = 0;
+//	scanf("%d", &n);
+//	int ret = frog(n);
+//	printf("%d\n", ret);
+//	return 0;
+//}
