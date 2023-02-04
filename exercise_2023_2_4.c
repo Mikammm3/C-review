@@ -138,3 +138,26 @@
 
 
 
+//#include <stdio.h>
+//
+//int main()
+//{
+//    char arr[8000] = { 0 };
+//    scanf("%s", arr);
+//    char* p = arr;
+//    long long c = 0;
+//    long long ch = 0;
+//    long long chn = 0;
+//    while (*p)
+//    {
+//        if ((*p) == 'C')
+//            c++;
+//        else if ((*p) == 'H')
+//            ch += c;
+//        else if ((*p) == 'N')
+//            chn += ch;
+//        p++;
+//    }
+//    printf("%lld\n", chn);
+//    return 0;
+//}
